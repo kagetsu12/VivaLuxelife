@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VivaLuxelife - A Timeless Lifestyle Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Dancing+Script:wght@400;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Top Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>VivaLuxelife</h1>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Categories</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-category="fashion">Fashion & Accessories</a></li>
+                            <li><a href="#" data-category="health">Health & Beauty</a></li>
+                            <li><a href="#" data-category="home">Home & Garden</a></li>
+                            <li><a href="#" data-category="travel">Travel & Accommodation</a></li>
+                            <li><a href="#" data-category="finance">Finance & Insurance</a></li>
+                            <li><a href="#" data-category="food">Food & Beverage</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search articles...">
+                    <button id="searchBtn">🔍</button>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/vivaluxelife" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/vivaluxelife" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/vivaluxelife" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.pinterest.com/vivaluxelife" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Pinterest">
+                        <i class="fab fa-pinterest-p"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h2 class="hero-title">Celebrating the Art of Living Well</h2>
+                <p class="hero-subtitle">Discover timeless elegance, curated wisdom, and inspired living across fashion, wellness, home, travel, finance, and culinary delights.</p>
+                <div class="hero-buttons">
+                    <a href="#articles" class="hero-btn primary">Explore Articles</a>
+                    <a href="about.html" class="hero-btn secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&h=800&fit=crop" alt="VivaLuxelife Lifestyle">
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content" id="articles">
+        <div class="content-container">
+            <!-- Featured Section -->
+            <section class="featured-section">
+                <h2 class="section-title">Latest Articles</h2>
+                <div class="articles-grid" id="articlesGrid">
+                    <!-- Articles will be loaded here by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Pagination -->
+            <div class="pagination" id="pagination">
+                <!-- Pagination will be generated by JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>VivaLuxelife</h3>
+                    <p>A timeless lifestyle blog celebrating the art of living well. Discover curated content on fashion, health, home, travel, finance, and culinary delights.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#" data-category="fashion">Fashion & Accessories</a></li>
+                        <li><a href="#" data-category="health">Health & Beauty</a></li>
+                        <li><a href="#" data-category="home">Home & Garden</a></li>
+                        <li><a href="#" data-category="travel">Travel & Accommodation</a></li>
+                        <li><a href="#" data-category="finance">Finance & Insurance</a></li>
+                        <li><a href="#" data-category="food">Food & Beverage</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Pinterest</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 VivaLuxelife. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
